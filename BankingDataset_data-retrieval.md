@@ -66,9 +66,8 @@ print(df.info())
 -------------------------
 
 
-## Exportar i guardar els fixters .ipynb + .md a una carpeta
+## Exportar i guardar els fixters .ipynb + .md a una carpeta (part del PATH serà oculta per temes de privacitat)
 
-Run a script to save your notebook in the specified directory and export a Markdown file of the notebook content in the same folder.
 
 
 ```python
@@ -117,8 +116,8 @@ from nbconvert import MarkdownExporter
 
 # Paths to save files in the specified directory
 notebook_path = "BankingDataset_data-retrieval.ipynb"  # Current Jupyter Notebook file name
-markdown_path = "C:/Users/Buba/Documents/CURSOS-PROGRAMACION/IT-Academy/Upskilling-ML-negoci/ML_BankingDataset/BankingDataset_data-retrieval.md"
-target_notebook_path = "C:/Users/Buba/Documents/CURSOS-PROGRAMACION/IT-Academy/Upskilling-ML-negoci/ML_BankingDataset/BankingDataset_data-retrieval.ipynb"
+markdown_path = "C:/Users/.../ML_BankingDataset/BankingDataset_data-retrieval.md"
+target_notebook_path = "C:/Users/.../ML_BankingDataset/BankingDataset_data-retrieval.ipynb"
 
 # Export notebook to Markdown format and save it to the specified directory
 with open(notebook_path, "r", encoding="utf-8") as f:
@@ -145,7 +144,7 @@ print("Files saved successfully.")
 import os
 
 # Define the directory path
-directory = "C:/Users/Buba/Documents/CURSOS-PROGRAMACION/IT-Academy/Upskilling-ML-negoci/ML_BankingDataset"
+directory = "C:/Users/.../ML_BankingDataset"
 
 # List all files in the directory
 print("Files in the directory:", os.listdir(directory))
